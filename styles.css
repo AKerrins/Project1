@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+.h1 {
+  color: white;
+  font-size: 100px;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  background-image: url("assets/familyGuyStarWarsHD.jpeg");
+  background-size: cover;
+  /*Commented out as adding background-size broke the code.
+  background-image: url("assets/familyGuyStarWars.jpg");
+  background-size: cover;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;*/
+}
+.result-score {
+  color: white;
+  font-size: 100px;
+}
+
+.your_score {
+  color: red;
+  font-size: 100px;
+}
+
+.grid-wrapper {
+  height: 120vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+  width: 900px;
+}
+.grid {
+  align-items: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 80%;
+  justify-content: center;
+  border: solid black 5px;
+  background-size: contain;
+  /* background-position: center;
+  background-repeat: no-repeat;*/
+}
+
+.grid div {
+  border: 1px solid lightgrey;
+  flex-grow: 1;
+  height: 10%;
+  width: 10%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grid div.meg {
+  background-image: url("assets/meg.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+/* drawing a circle to be the alien invaders*/
+.invader {
+  /*background-color:purple;
+    border-radius:10px;*/
+  background-image: url("assets/stewie.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.grid div.laser {
+  /*background-color: red;*/
+  background-image: url("assets/brian.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.display_score {
+  color: blue;
+  font-size: 30px;
+}
